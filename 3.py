@@ -1,4 +1,3 @@
-
 def draw_line(offset, step):
 
     line = " "
@@ -10,7 +9,7 @@ def ugol():
     step = 0
     print(" " * (offset - int(step)+2), "\x1b[48;5;124m", "\x1b[m")
     for center in range(height, 0, -1):
-        draw_line(offset, step)
+        draw_line(offset, step, center)
         if center==height:
             step=1
         step = step * 2
